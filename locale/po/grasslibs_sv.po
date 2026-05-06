@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-21 12:47+0000\n"
+"POT-Creation-Date: 2026-05-06 12:19+0000\n"
 "PO-Revision-Date: 2025-06-20 00:15+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://weblate.osgeo.org/projects/grass-gis/grasslibs/sv/>\n"
@@ -6654,9 +6654,11 @@ msgstr[1] "%d primitiver registrerade"
 
 #: ../lib/vector/Vlib/build_nat.c:122 ../lib/vector/Vlib/build_sfa.c:381
 #: ../lib/vector/Vlib/build_sfa.c:668
-#, c-format
+#, fuzzy, c-format
+#| msgid "One vertex registered"
+#| msgid_plural "%<PRId64> vertices registered"
 msgid "One vertex registered"
-msgid_plural "%<PRId64> vertices registered"
+msgid_plural "%d vertices registered"
 msgstr[0] "En topp registrerad"
 msgstr[1] "%<PRId64> registrerade hörn"
 
