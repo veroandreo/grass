@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-27 15:58+0000\n"
+"POT-Creation-Date: 2026-07-18 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,8 +73,8 @@ msgstr ""
 #: ../raster/r.volume/main.c:177 ../raster/r.what.color/main.c:246
 #: ../raster/r.what/main.c:280 ../temporal/t.connect/main.c:181
 #: ../vector/v.category/main.c:264 ../vector/v.category/main.c:333
-#: ../vector/v.class/main.c:223 ../vector/v.class/main.c:264
-#: ../vector/v.class/main.c:271 ../vector/v.db.connect/main.c:148
+#: ../vector/v.class/main.c:230 ../vector/v.class/main.c:271
+#: ../vector/v.class/main.c:278 ../vector/v.db.connect/main.c:148
 #: ../vector/v.db.select/main.c:356 ../vector/v.db.select/main.c:391
 #: ../vector/v.distance/main.c:310 ../vector/v.info/print.c:903
 #: ../vector/v.profile/main.c:296 ../vector/v.vect.stats/main.c:284
@@ -93,7 +93,7 @@ msgstr ""
 #: ../raster/r.regression.multi/main.c:696
 #: ../raster/r.stats.quantile/main.c:472 ../raster/r.volume/main.c:448
 #: ../raster3d/r3.info/main.c:993 ../temporal/t.connect/main.c:217
-#: ../vector/v.class/main.c:379 ../vector/v.db.connect/main.c:430
+#: ../vector/v.class/main.c:389 ../vector/v.db.connect/main.c:430
 #: ../vector/v.profile/main.c:885 ../vector/v.vect.stats/main.c:863
 #: ../vector/v.what.rast/main.c:694 ../vector/v.what/main.c:321
 msgid "Failed to serialize JSON to pretty format."
@@ -348,7 +348,7 @@ msgstr ""
 #: ../raster/r.univar/stats.c:439 ../raster/r.volume/main.c:409
 #: ../raster/r.what.color/main.c:52 ../raster3d/r3.info/main.c:153
 #: ../temporal/t.connect/main.c:32 ../vector/v.category/main.c:942
-#: ../vector/v.class/main.c:257 ../vector/v.class/main.c:348
+#: ../vector/v.class/main.c:264 ../vector/v.class/main.c:358
 #: ../vector/v.db.connect/main.c:302 ../vector/v.db.connect/main.c:395
 #: ../vector/v.db.select/main.c:338 ../vector/v.db.select/main.c:349
 #: ../vector/v.db.select/main.c:366 ../vector/v.distance/main.c:1578
@@ -2114,6 +2114,7 @@ msgstr ""
 #: ../locale/scriptstrings/v.db.univar_to_translate.c:2
 #: ../locale/scriptstrings/v.db.update_to_translate.c:2
 #: ../locale/scriptstrings/v.dissolve_to_translate.c:2
+#: ../locale/scriptstrings/v.geometry_to_translate.c:2
 #: ../locale/scriptstrings/v.import_to_translate.c:2
 #: ../locale/scriptstrings/v.in.e00_to_translate.c:2
 #: ../locale/scriptstrings/v.in.geonames_to_translate.c:2
@@ -4154,6 +4155,7 @@ msgstr ""
 #: ../locale/scriptstrings/t.list_to_translate.c:8
 #: ../locale/scriptstrings/t.list_to_translate.c:14
 #: ../locale/scriptstrings/t.list_to_translate.c:15
+#: ../locale/scriptstrings/t.list_to_translate.c:19
 #: ../locale/scriptstrings/t.rast.list_to_translate.c:10
 #: ../locale/scriptstrings/t.rast.list_to_translate.c:11
 #: ../locale/scriptstrings/t.rast.neighbors_to_translate.c:7
@@ -4830,12 +4832,12 @@ msgstr ""
 msgid "Classification of %s into %i classes\n"
 msgstr ""
 
-#: ../display/d.vect.thematic/main.c:517 ../vector/v.class/main.c:297
+#: ../display/d.vect.thematic/main.c:517 ../vector/v.class/main.c:307
 #, c-format
 msgid "Using algorithm: *** %s ***\n"
 msgstr ""
 
-#: ../display/d.vect.thematic/main.c:518 ../vector/v.class/main.c:299
+#: ../display/d.vect.thematic/main.c:518 ../vector/v.class/main.c:309
 #, c-format
 msgid "Mean: %f\tStandard deviation = %f\n"
 msgstr ""
@@ -4845,7 +4847,7 @@ msgstr ""
 msgid "Last chi2 = %f\n"
 msgstr ""
 
-#: ../display/d.vect.thematic/main.c:524 ../vector/v.class/main.c:306
+#: ../display/d.vect.thematic/main.c:524 ../vector/v.class/main.c:316
 #, c-format
 msgid "Stdev multiplied by %.4f to define step\n"
 msgstr ""
@@ -5362,8 +5364,7 @@ msgstr ""
 #: ../scripts/r.buffer.lowmem/r.buffer.lowmem.py:85
 #: ../scripts/r.fillnulls/r.fillnulls.py:152 ../scripts/r.grow/r.grow.py:124
 #: ../scripts/r.mask/r.mask.py:151 ../scripts/r.pack/r.pack.py:74
-#: ../scripts/r.reclass.area/r.reclass.area.py:101
-#: ../scripts/r.reclass.area/r.reclass.area.py:222 ../scripts/r.rgb/r.rgb.py:55
+#: ../scripts/r.reclass.area/r.reclass.area.py:345 ../scripts/r.rgb/r.rgb.py:55
 #: ../scripts/v.rast.stats/v.rast.stats.py:154 ../vector/v.colors/main.c:317
 #: ../vector/v.vol.rst/main.c:604
 #, c-format, python-format
@@ -10550,6 +10551,7 @@ msgstr ""
 #: ../imagery/i.ortho.photo/i.ortho.photo/menu.c:47
 #: ../imagery/i.rectify/main.c:85
 #: ../locale/scriptstrings/i.image.mosaic_to_translate.c:3
+#: ../locale/scriptstrings/v.geometry_to_translate.c:3
 #: ../locale/scriptstrings/v.report_to_translate.c:3
 #: ../locale/scriptstrings/v.to.lines_to_translate.c:3
 #: ../raster/r.circle/main.c:51 ../raster/r.patch/main.c:69
@@ -12045,8 +12047,8 @@ msgstr ""
 msgid "Predict with a Support Vector Machine"
 msgstr ""
 
-#. GTC: SVM prediction input
 #. GTC: SVM training input
+#. GTC: SVM prediction input
 #: ../imagery/i.svm.predict/main.c:60 ../imagery/i.svm.train/main.c:62
 msgid "Maps with feature values (attributes)"
 msgstr ""
@@ -14533,30 +14535,52 @@ msgid "aggregation"
 msgstr ""
 
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:5
-msgid "Value option that sets the area size limit (in hectares)"
+msgid "Value option that sets the area size limit (in hectares) (deprecated)"
 msgstr ""
 
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:6
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:8
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:10
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:12
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:14
 #: ../locale/scriptstrings/v.to.lines_to_translate.c:8
 msgid "Area"
 msgstr ""
 
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:7
-msgid "Lesser or greater than specified value"
+msgid "Keep only areas lesser or greater than specified value (deprecated)"
 msgstr ""
 
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:9
-msgid "Method used for reclassification"
+msgid "Value for the lower area size limit (in hectares). Pixel clumps with areas below this value are removed."
 msgstr ""
 
 #: ../locale/scriptstrings/r.reclass.area_to_translate.c:11
+msgid "Value for the upper area size limit (in hectares). Pixel clumps with areas above this value are removed."
+msgstr ""
+
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:13
+msgid "Method used for area size filtering"
+msgstr ""
+
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:15
 msgid "Input map is clumped"
 msgstr ""
 
-#: ../locale/scriptstrings/r.reclass.area_to_translate.c:12
-msgid "Clumps including diagonal neighbors"
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:16
+msgid "Generate clumps including diagonal neighbors"
+msgstr ""
+
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:17
+msgid "Invert filter (remove clumps larger than lower and smaller than upper)"
+msgstr ""
+
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:18
+msgid "Apply lower area threshold as \"minsize\" during clumping"
+msgstr ""
+
+#: ../locale/scriptstrings/r.reclass.area_to_translate.c:19
+msgid "Output vector map, do not convert back to raster (only for method 'rmarea')"
 msgstr ""
 
 #: ../locale/scriptstrings/r.rgb_to_translate.c:1
@@ -15090,8 +15114,8 @@ msgstr ""
 
 #: ../locale/scriptstrings/t.list_to_translate.c:11
 #: ../locale/scriptstrings/t.list_to_translate.c:17
-#: ../locale/scriptstrings/t.list_to_translate.c:19
 #: ../locale/scriptstrings/t.list_to_translate.c:21
+#: ../locale/scriptstrings/t.list_to_translate.c:23
 #: ../locale/scriptstrings/t.rast.list_to_translate.c:8
 #: ../locale/scriptstrings/t.rast.list_to_translate.c:15
 #: ../locale/scriptstrings/t.rast.list_to_translate.c:17
@@ -15142,6 +15166,10 @@ msgid "plain;Plain text output;line;Comma separated list of dataset names;json;J
 msgstr ""
 
 #: ../locale/scriptstrings/t.list_to_translate.c:18
+msgid "Name of mapsets to list ('.' for current, '*' for all mapsets)"
+msgstr ""
+
+#: ../locale/scriptstrings/t.list_to_translate.c:20
 #: ../locale/scriptstrings/t.rast.list_to_translate.c:16
 #: ../locale/scriptstrings/t.rast.univar_to_translate.c:12
 #: ../locale/scriptstrings/t.rast3d.list_to_translate.c:15
@@ -15152,7 +15180,7 @@ msgstr ""
 msgid "Field separator character between the output columns"
 msgstr ""
 
-#: ../locale/scriptstrings/t.list_to_translate.c:20
+#: ../locale/scriptstrings/t.list_to_translate.c:22
 #: ../locale/scriptstrings/t.sample_to_translate.c:11
 msgid "Print the column names as first row"
 msgstr ""
@@ -15872,6 +15900,7 @@ msgstr ""
 
 #: ../locale/scriptstrings/t.rast.univar_to_translate.c:6
 #: ../locale/scriptstrings/t.rast3d.univar_to_translate.c:7
+#: ../locale/scriptstrings/v.geometry_to_translate.c:5
 #: ../raster/r.horizon/main.c:182 ../raster/r.mfilter/main.c:69
 #: ../raster/r.neighbors/main.c:188 ../raster/r.patch/main.c:75
 #: ../raster/r.resamp.filter/main.c:437 ../raster/r.resamp.interp/main.c:92
@@ -16638,6 +16667,30 @@ msgstr ""
 
 #: ../locale/scriptstrings/v.dissolve_to_translate.c:23
 msgid "sql;Uses SQL attribute database;univar;Uses v.db.univar"
+msgstr ""
+
+#: ../locale/scriptstrings/v.geometry_to_translate.c:1
+msgid "Prints geometry metrics of vector features."
+msgstr ""
+
+#: ../locale/scriptstrings/v.geometry_to_translate.c:4
+msgid "metric"
+msgstr ""
+
+#: ../locale/scriptstrings/v.geometry_to_translate.c:6
+msgid "Geometry metric(s) to compute"
+msgstr ""
+
+#: ../locale/scriptstrings/v.geometry_to_translate.c:7
+msgid "area;area size;perimeter;perimeter length of an area;length;line length;count;number of features for each category;compactness;compactness of an area, calculated as perimeter / (2 * sqrt(PI * area));fractal_dimension;fractal dimension of boundary defining a polygon, calculated as 2 * (log(perimeter) / log(area));slope;slope steepness of vector line or boundary;sinuosity;line sinuosity, calculated as line length / distance between end points;azimuth;line azimuth, calculated as angle between North direction and endnode direction at startnode;coordinates;point coordinates, X,Y or X,Y,Z;start;line/boundary starting point coordinates, X,Y or X,Y,Z;end;line/boundary end point coordinates, X,Y or X,Y,Z;bbox;bounding box of area, N,S,E,W"
+msgstr ""
+
+#: ../locale/scriptstrings/v.geometry_to_translate.c:8
+msgid "Units (one per metric, positional; unspecified metrics use defaults)"
+msgstr ""
+
+#: ../locale/scriptstrings/v.geometry_to_translate.c:9
+msgid "plain;Plain text with pipe separator by default;csv;CSV (Comma Separated Values);json;JSON (JavaScript Object Notation)"
 msgstr ""
 
 #: ../locale/scriptstrings/v.import_to_translate.c:1
@@ -32937,7 +32990,7 @@ msgid "write_vtk_data: Writing Celldata %s with rows %i cols %i depths %i to vtk
 msgstr ""
 
 #: ../raster3d/r3.out.vtk/writeVTKData.c:453
-msgid "Wrong 3D raster map values! Values should in between 0 and 255!"
+msgid "Wrong 3D raster map values! Values should be in between 0 and 255!"
 msgstr ""
 
 #: ../raster3d/r3.retile/main.c:51
@@ -34877,63 +34930,58 @@ msgstr ""
 msgid "azimuth must be between 0 and 360"
 msgstr ""
 
-#: ../scripts/r.reclass.area/r.reclass.area.py:97
-#: ../scripts/r.reclass.area/r.reclass.area.py:214
-msgid "xy-locations are not supported"
+#: ../scripts/r.reclass.area/r.reclass.area.py:151
+msgid ""
+"xy-locations are not supported\n"
+"Need projected data with grids in meters"
 msgstr ""
 
-#: ../scripts/r.reclass.area/r.reclass.area.py:98
-msgid "Need projected data with grids in meters"
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:104
-msgid "flags c and d are mutually exclusive"
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:114
-#, python-format
-msgid "Temporary raster map <%s> exists"
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:117
-msgid "Generating a clumped raster file including diagonal neighbors..."
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:121
-msgid "Generating a clumped raster file ..."
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:127
-#, python-format
-msgid "Generating a reclass map with area size less than or equal to %f hectares..."
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:135
-#, python-format
-msgid "Generating a reclass map with area size greater than or equal to %f hectares..."
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:166
-#, python-format
-msgid "No areas of size less than or equal to %f hectares found."
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:170
-#, python-format
-msgid "No areas of size greater than or equal to %f hectares found."
-msgstr ""
-
-#: ../scripts/r.reclass.area/r.reclass.area.py:212
+#: ../scripts/r.reclass.area/r.reclass.area.py:157
 msgid "Latitude-longitude locations are not supported"
 msgstr ""
 
-#: ../scripts/r.reclass.area/r.reclass.area.py:219
-msgid "You have to specify mode='lesser' with method='rmarea'"
+#: ../scripts/r.reclass.area/r.reclass.area.py:159
+msgid "xy-locations are not supported"
 msgstr ""
 
-#: ../scripts/r.reclass.area/r.reclass.area.py:229
+#: ../scripts/r.reclass.area/r.reclass.area.py:177
+msgid "Generating a clumped raster file"
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:179
+msgid " including diagonal neighbors"
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:181
 #, python-format
-msgid "Generating output raster map <%s>..."
+msgid " with minimum %s pixels"
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:204
+msgid "Generating a reclass map with area size"
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:209
+#, python-format
+msgid " larger than or equal to %f hectares..."
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:217
+#, python-format
+msgid " smaller than or equal to %f hectares..."
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:257
+msgid "No areas of size "
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:275
+#, python-format
+msgid "Raster map <%s> is not of type 'CELL'. Results may not be as expected."
+msgstr ""
+
+#: ../scripts/r.reclass.area/r.reclass.area.py:354
+msgid "Options <mode> and <value> are deprecated. Use 'lower' and/or 'upper'."
 msgstr ""
 
 #: ../scripts/r.semantic.label/r.semantic.label.py:67
@@ -35485,6 +35533,18 @@ msgstr ""
 msgid ""
 "A processing step failed. Check the above error messages and see the following details:\n"
 "{error}"
+msgstr ""
+
+#: ../scripts/v.geometry/v.geometry.py:171
+msgid "Cannot mix metrics from different feature types: {}. Results are merged by category, so combining e.g. line and area metrics would produce misleading records. Run v.geometry separately for each feature type."
+msgstr ""
+
+#: ../scripts/v.geometry/v.geometry.py:187
+msgid "More units ({}) than metrics ({}) specified"
+msgstr ""
+
+#: ../scripts/v.geometry/v.geometry.py:202
+msgid "A standard CSV separator (delimiter) is only one character long, got: {}"
 msgstr ""
 
 #: ../scripts/v.import/v.import.py:207
@@ -36488,34 +36548,41 @@ msgstr ""
 msgid "The 'list' format can only be used with the -b flag. Please use -b to enable list output."
 msgstr ""
 
-#: ../vector/v.class/main.c:181
+#: ../vector/v.class/main.c:178 ../vector/v.reclass/main.c:239
+#: ../vector/v.to.rast/support.c:118 ../vector/v.to.rast/support.c:287
+#: ../vector/v.to.rast/support.c:517 ../vector/v.to.rast/vect2rast.c:77
+#, c-format
+msgid "No records selected from table <%s>"
+msgstr ""
+
+#: ../vector/v.class/main.c:184
 msgid "Unable to sort array of values"
 msgstr ""
 
-#: ../vector/v.class/main.c:212
+#: ../vector/v.class/main.c:217
 msgid "The discontinuities algorithm indicates that some class breaks are not statistically significant at alpha=0.05. You are advised to reduce the number of classes."
 msgstr ""
 
-#: ../vector/v.class/main.c:295
+#: ../vector/v.class/main.c:305
 #, c-format
 msgid ""
 "\n"
 "Classification of %s into %i classes\n"
 msgstr ""
 
-#: ../vector/v.class/main.c:303
+#: ../vector/v.class/main.c:313
 #, c-format
 msgid "Lowest chi2 = %f\n"
 msgstr ""
 
-#: ../vector/v.class/main.c:309
+#: ../vector/v.class/main.c:319
 #, c-format
 msgid ""
 "%15s%15s%15s\n"
 "\n"
 msgstr ""
 
-#: ../vector/v.class/main.c:322
+#: ../vector/v.class/main.c:332
 #, c-format
 msgid ""
 "\n"
@@ -45041,13 +45108,6 @@ msgstr ""
 #: ../vector/v.surf.idw/read_sites.c:53
 #, c-format
 msgid "Database connection not defined for layer %s"
-msgstr ""
-
-#: ../vector/v.reclass/main.c:239 ../vector/v.to.rast/support.c:118
-#: ../vector/v.to.rast/support.c:287 ../vector/v.to.rast/support.c:517
-#: ../vector/v.to.rast/vect2rast.c:77
-#, c-format
-msgid "No records selected from table <%s>"
 msgstr ""
 
 #: ../vector/v.reclass/main.c:253
